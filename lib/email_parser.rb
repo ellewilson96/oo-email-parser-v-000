@@ -14,4 +14,5 @@ end
       @@array << emails
       @@array.uniq!
     end
+    @@array
   end
