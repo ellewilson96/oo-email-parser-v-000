@@ -10,7 +10,7 @@ array = []
   def initialize(emails)
     @emails = emails
 end
-    def parse(emails)
+    def parse
       array << emails
       array.uniq!
     end
