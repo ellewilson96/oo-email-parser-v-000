@@ -8,6 +8,7 @@ class EmailParser
 array = []
 
   def initialize(emails)
+    @emails = emails
 end
     def parse(emails)
       array << emails
