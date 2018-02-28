@@ -9,10 +9,11 @@ class EmailParser
 
   def initialize(emails)
     @emails = emails
-end
+  end
+
     def parse
-      @@array << emails
-      @@array.uniq!
+      emails.split.collect do |address|
+        address.split(',')
+      end.flatten.uniq
     end
-    @@array
   end
