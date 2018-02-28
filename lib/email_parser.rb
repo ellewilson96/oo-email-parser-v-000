@@ -5,13 +5,13 @@
 class EmailParser
   attr_accessor :emails
 
-array = []
+@@array = []
 
   def initialize(emails)
     @emails = emails
 end
     def parse
-      array << emails
-      array.uniq!
+      @@array << emails
+      @@array.uniq!
     end
   end
